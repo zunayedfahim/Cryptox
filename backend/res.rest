@@ -1,1 +1,32 @@
-GET http://localhost:5000/api/get
+GET http://localhost:5000/api/getCryptos
+
+###
+
+POST http://localhost:5000/register
+content-type: application/json
+
+{
+  "username": "fahim",
+  "email": "fahim2@gmail.com",
+  "password": "fahim"
+}
+
+###
+
+POST http://localhost:5000/login
+content-type: application/json
+
+{
+    "email": "fahimzunayed@gmail.com",
+    "password": "fahim"
+}
+
+###
+
+POST http://localhost:5000/auth
+content-type: application/json
+
+{
+  "email": "fahimzunayed@gmail.com",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1MiwidXNlcm5hbWUiOiJmYWhpbSIsImVtYWlsIjoiZmFoaW16dW5heWVkQGdtYWlsLmNvbSIsImlhdCI6MTY5NDYzNDkxNiwiZXhwIjoxNjk0NjQyMTE2fQ.jm9uyG3TC-6dL84TzxJ8DexT9XfeApqJPZ5IE6yqPpo"
+}

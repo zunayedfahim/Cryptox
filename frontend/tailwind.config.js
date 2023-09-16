@@ -22,6 +22,13 @@ module.exports = {
           900: "#14532d",
           950: "#052e16",
         },
+        customBlack: "#121415",
+        customGray: "#1e2022",
+        customDarkGreen: "#151b18",
+        customGreen: "#8bff89",
+        customRed: "#fd2e2e",
+        customBlue: "#2b2bff",
+        customWhite: "#fafafa",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
