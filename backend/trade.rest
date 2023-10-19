@@ -1,0 +1,71 @@
+POST http://localhost:5000/buyCrypto
+content-type: application/json
+
+{ 
+    "user_id": 55,
+    "crypto_id": "dogecoin",
+    "name": "Dogecoin",
+    "symbol": "doge",
+    "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
+    "buying_price": 25150.00,
+    "quantity": 5.052,
+    "total_amount": 900.00
+}
+
+###
+POST http://localhost:5000/sellCrypto
+content-type: application/json
+
+{ 
+    "user_id": 55,
+    "symbol": "btc",
+    "selling_price": 25150.00,
+    "quantity": 5.052,
+    "total_amount": 5000.00
+}
+
+
+###
+POST http://localhost:5000/swapCrypto
+content-type: application/json
+
+{ 
+    "user_id": 55,
+    "fromSymbol": "btc",
+    "toCrypto_id": "ethereum",
+    "name": "Ethereum",
+    "toSymbol": "eth",
+    "image": "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880",
+    "buying_price": 25150.00,
+    "quantity": 5.052,
+    "total_amount": 5000.00
+}
+
+###
+POST http://localhost:5000/getHoldings
+content-type: application/json
+
+{ 
+    "user_id": 55
+}
+
+###
+POST http://localhost:5000/deposit
+content-type: application/json
+
+{ 
+    "user_id": 59,
+    "amount": 1000,
+    "method" : "card"
+}
+
+
+###
+POST http://localhost:5000/withdraw
+content-type: application/json
+
+{ 
+    "user_id": 59,
+    "amount": 1000,
+    "method" : "card"
+}

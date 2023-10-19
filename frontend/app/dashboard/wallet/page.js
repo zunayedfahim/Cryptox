@@ -10,7 +10,7 @@ const page = () => {
       <div className="bg-customBlack rounded-xl p-5">
         <h1 className="pb-5">Available Balance</h1>
         <p className="text-5xl font-semibold">
-          ${user?.current_balance.toLocaleString()}
+          ${user?.current_balance?.toLocaleString()}
         </p>
       </div>
 

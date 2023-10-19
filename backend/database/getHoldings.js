@@ -1,13 +1,13 @@
 const connectDB = require("../config/database");
 const handler = {};
 
-handler.getTransaction = (req, res) => {
+handler.getHoldings = (req, res) => {
   const { user_id } = req.body;
 
-  const sqlSelect =
-    "SELECT * FROM transaction_history WHERE user_id=? ORDER BY date_and_time DESC";
+  const sqlSelect = "SELECT * FROM holdings WHERE user_id=?";
   connectDB.query(sqlSelect, [user_id], (err, result) => {
-    res.status(200).json(result);
+    if (err) res.status(400).send({ message: err.message });
+    res.status(200).send(result);
   });
 };
 

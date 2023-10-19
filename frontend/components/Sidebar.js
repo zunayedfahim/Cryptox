@@ -19,7 +19,7 @@ const Sidebar = () => {
       {/* Current Balance */}
       <div className="px-8 py-8">
         <Cryptox />
-        <h1>{user?.current_balance || "0.00"} USD</h1>
+        <h1>{user?.current_balance.toLocaleString() || "0.00"} USD</h1>
       </div>
 
       {/* Menu */}

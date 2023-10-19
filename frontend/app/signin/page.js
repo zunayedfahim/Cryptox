@@ -71,7 +71,7 @@ export default function page() {
                 <input
                   type="email"
                   name="email"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  pattern="[-a-zA-Z0-9~!$%^&amp;*_=+}{'?]+(\.[-a-zA-Z0-9~!$%^&amp;*_=+}{'?]+)*@([a-zA-Z0-9_][-a-zA-Z0-9_]*(\.[-a-zA-Z0-9_]+)*\.([cC][oO][mM]))(:[0-9]{1,5})?"
                   id="email"
                   className="border-none sm:text-sm rounded-lg block w-full p-2.5 bg-customBlack placeholder-gray-400 text-white focus:ring-customGreen focus:border-customGreen"
                   placeholder="name@company.com"

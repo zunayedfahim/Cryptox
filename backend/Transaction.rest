@@ -4,15 +4,3 @@ content-type: application/json
 { 
     "user_id": 55
 }
-
-###
-
-POST http://localhost:5000/addTransaction
-content-type: application/json
-
-{ 
-    "user_id": 55, 
-    "transaction_type": "BUY",
-    "transaction_amount": 17899.510,
-    "description": "LTC" 
-}
