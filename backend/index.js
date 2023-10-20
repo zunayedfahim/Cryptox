@@ -21,6 +21,7 @@ app.use(express.json());
 app.use(cors());
 
 // Register
+// http://localhost5000/register
 app.post("/register", registerUser);
 
 // Login

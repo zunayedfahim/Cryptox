@@ -13,6 +13,7 @@ handler.loginUser = async (req, res) => {
     const sql = "SELECT * FROM users WHERE email=?";
     connectDB.query(sql, [email], async function (err, result) {
       if (result.length > 0) {
+        // Match the password
         bcrypt.compare(password, result[0].password, (error, matched) => {
           if (error) console.log(error);
           if (!matched)
